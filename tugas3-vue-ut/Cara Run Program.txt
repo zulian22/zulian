@@ -1,0 +1,6 @@
+untuk run program nya :
+1. masuk ke tab terminal, lalu ketik "npm install", tunggu sampai selesai, lalu ketik "npm run dev".
+2. lalu klik kiri sambil menekan CTRL di bagian "Local: http://localhost:5173/", maka akan terbuka di chrome.
+
+*: jika error saat mengetik npm install, ketik perintah "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned", kemudian kembali ke nomor 1 dan 2.
+

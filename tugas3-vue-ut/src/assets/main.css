@@ -1,0 +1,471 @@
+@import './base.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1b1b1b;
+}
+
+button:hover {
+  background-color: #896c02;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1b1b1b;
+}
+
+/* Login Container */
+.login-container {
+  max-width: 400px;
+  margin: 5% auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e8b802;
+}
+
+.header-login {
+  margin-bottom: 30px;
+}
+
+.logo-ut {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.login-container h2 {
+  font-size: 2.2em;
+  color: #1b6dc1;
+  margin-bottom: 5px;
+}
+
+.login-container p {
+  font-size: 0.9em;
+  color: #1b1b1b;
+  margin-bottom: 25px;
+}
+
+/* Tombol Login */
+#loginForm button {
+  background-color: #1b6dc1;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#loginForm button:hover {
+  background-color: #15589c;
+}
+
+/* Links (Lupa Password, Belum punya akun) */
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  margin-top: 25px;
+}
+
+.links a {
+  color: #1b6dc1;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* --- Navbar --- */
+.menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  height: 65px;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  gap: 10px;
+}
+
+.navbar-logo {
+  max-width: 35px;
+  margin-right: 0px;
+}
+
+.navbar-title {
+  color: rgb(56, 43, 243);
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.menu-center {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  padding: 12px 0px;
+  color: #4820f7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: block;
+}
+
+.menu a:hover {
+  color: #6c7092;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-top: 3px solid #ffde59;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #1b1b1b;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f8ff;
+  color: #1b6dc1;
+}
+
+/* Tombol Keluar (Logout) */
+.logout-button {
+  background-color: #ffde59;
+  color: #1b1b1b;
+  font-weight: 700;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #e8b802;
+  color: #1b1b1b;
+}
+
+.dashboard-content {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ffde59;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Tracking */
+.tracking-container {
+  max-width: 75%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-container label {
+  text-align: left;
+}
+
+.paket-detail {
+  margin: -20px 0 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.paket-detail ol {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.paket-detail h4,
+.paket-detail p,
+.paket-detail ol,
+.paket-detail li {
+  margin-bottom: 10px;
+  color: #1b1b1b;
+}
+
+.tracking-table {
+  animation: fadeIn 0.5s ease-in-out;
+  max-width: 75%;
+  margin: auto;
+}
+
+.tracking-table h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1b1b1b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stock */
+div:where(.swal2-container) input:where(.swal2-input),
+div:where(.swal2-container) input:where(.swal2-file),
+div:where(.swal2-container) textarea:where(.swal2-textarea),
+div:where(.swal2-container) select:where(.swal2-select) {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 10px 0 !important;
+  font-size: smaller !important;
+}
+
+.select-filter {
+  display: flex;
+  align-items: center;
+}
+
+div .filter-container input[type='checkbox'],
+.date-do input[type='date'] {
+  width: auto !important;
+  margin-right: 8px !important;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+div:where(.filter-container) select,
+.date-do input[type='date'] {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: inherit;
+  box-shadow: none;
+}
+
+.filter-container h4 {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+div:where(.filter-container) select,
+.reset-filter-btn,
+.date-do input[type='date'] {
+  background-color: #d9d8d4;
+  color: #29303b;
+  font-weight: 600;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+div:where(.filter-container) select:hover,
+.reset-filter-btn:hover,
+.date-do input[type='date']:hover {
+  background-color: #bfbeb9;
+}
+
+.warning {
+  color: #ffd500;
+  font-weight: bold;
+}
+
+.danger {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.success {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.edit {
+  background-color: #ffd500;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #f44336;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container h2 {
+  margin-top: 25px;
+}
+
+.container {
+  margin: auto;
+  max-width: 75vw;
+}
+
+table {
+  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+}
+
+table th {
+  background-color: #1b6dc1;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f0f8ff;
+}
+
+table td a {
+  color: #1b6dc1;
+  text-decoration: none;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+
+form#formTambah {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form#formTambah button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form#formTambah input {
+    width: 100%;
+  }
+
+  .tracking-container,
+  .login-container {
+    width: 90%;
+  }
+}
